@@ -1,3 +1,4 @@
+
 struct ListNode* reverseList(struct ListNode* head){
     struct ListNode ret, *p, *q;
     ret.next = NULL;
@@ -8,5 +9,5 @@ struct ListNode* reverseList(struct ListNode* head){
         ret.next = p;
         p = q;
     }
-    return head;
+    return ret.next;
 }
